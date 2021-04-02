@@ -47,13 +47,11 @@ def calculate_mode(grades):
     return [k for k, v in c.items() if v == c.most_common(1)[0][1]]
 
 
-# Visualization by box plot
-def boxplot(grades):
-    figure = plt.figure(figsize=(10, 7))
-    plt.boxplot(grades)
+# Visualization by histogram
+def histogram(grades):
+    sortedGrades = sorted(grades)
+    plt.hist(sortedGrades, bins=20)
     plt.show()
-    pass
-
 
 # Print the answers of Q1, Q2, Q3, Q4, and Q5.
 def summary(grades, ids):
@@ -68,5 +66,6 @@ def summary(grades, ids):
 if __name__ == '__main__':
     pass
 
+histogram(gradess)
 summary(gradess, sids)
 
