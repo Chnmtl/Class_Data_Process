@@ -13,4 +13,4 @@ Q4. What is the median of the grades?
 
 Q5. What is the mode of the grades?
 
-Q6. How does the box blot of the grades look like?
+Q6. How does the histogram of the grades look like?
